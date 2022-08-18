@@ -33,21 +33,20 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ## UX
 ### The Strategy Plane
-*  Wavey is intended to be a friendly community site for users to create and share their own music production techniques with others. Users will also be able to find posts created by other users from around the world. The graphical elements and overall design of the site provide a clear and concise environment for them to focus their attention on learning.
+*  Coopgarms is intended to be a B2C ecommerce Site that users can visit to purchase streetwear fashion. They will be able to search for specific items or look at a broader category, saving those items to a wishlist for future purchasing if required. The simplicity and cleanliness of the layout will allow them to easily browse and purchase items, whilst being able to track their order and review their history. Users will also be able to rate and review items to share their information with the greater community. 
 
-##### The Sites Ideal User
-* Music producer of any level looking to share their favourite tips, tricks and techniques with others
-* Someone looking to expand their production knowledge
-* Someone looking for inspiration for new things to try when creating
-* Someone looking to build their social media following
+#### The Sites Ideal User
+* Streetwear afficianado who liked to keep up with the latest trends.
+* Someone looking to purchase streetwear items. 
+* Someone looking for inspiration when searching for fashion goods.
+* Someone looking to participate in a greater Streetwear community.
 
 #### Site Goals
+* To provide users with a place to purchase goods sold by the business
+* To provide users with a stylish site to browse
+* To provide users with a place to become inspired and become part of a community
 
-* To provide users with a place to become inspired
-* To provide users with a place to share their own tips and ideas
-* To provide users with a place to discover new techniques and be inspired
-
-#### Epics
+### Epics
 
 13 Epics were created which were then further developed into 41 User Stories. The details on each epic, along with the user stories linked to each one can be found in the project kanban board [here](https://github.com/YesCoops/wavey-blog/projects/1)
 
@@ -58,12 +57,12 @@ Please note: To open any links in this document in a new browser tab, please pre
 5. User Login/Logout [#5](https://github.com/mattcooperdev/coopgarms/issues/5)
 6. Product Management [#6](https://github.com/mattcooperdev/coopgarms/issues/6)
 7. Product Viewing [#7](https://github.com/mattcooperdev/coopgarms/issues/7)
-8. Product Wishlist [#8] (https://github.com/mattcooperdev/coopgarms/issues/8)
-9. Shopping Cart [#9] (https://github.com/mattcooperdev/coopgarms/issues/9)
-10. Checkout [#10] (https://github.com/mattcooperdev/coopgarms/issues/10)
-11. Order Status [#11] (https://github.com/mattcooperdev/coopgarms/issues/11)
-12. Product Reviews [#12] (https://github.com/mattcooperdev/coopgarms/issues/12)
-13. Web Marketing [#13] (https://github.com/mattcooperdev/coopgarms/issues/13)
+8. Product Wishlist [#8](https://github.com/mattcooperdev/coopgarms/issues/8)
+9. Shopping Cart [#9](https://github.com/mattcooperdev/coopgarms/issues/9)
+10. Checkout [#10](https://github.com/mattcooperdev/coopgarms/issues/10)
+11. Order Status [#11](https://github.com/mattcooperdev/coopgarms/issues/11)
+12. Product Reviews [#12](https://github.com/mattcooperdev/coopgarms/issues/12)
+13. Web Marketing [#13](https://github.com/mattcooperdev/coopgarms/issues/13)
 
 
 ### User Stories
