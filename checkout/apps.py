@@ -2,5 +2,10 @@ from django.apps import AppConfig
 
 
 class CheckoutConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
+    '''override django default to call
+    modified signals for line item'''
+
     name = 'checkout'
+
+    def ready(self):
+        import checkout.signals
