@@ -3,7 +3,9 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    '''Custom Order Form'''
     class Meta:
+        '''Assign models and fields requried to be completed by User'''
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
