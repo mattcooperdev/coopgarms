@@ -1,3 +1,6 @@
+import stripe
+import json
+
 from django.shortcuts import (
     render,
     redirect,
@@ -15,8 +18,6 @@ from .models import Order, OrderLineItem
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 
-import stripe
-import json
 
 @require_POST
 def cache_checkout_data(request):
