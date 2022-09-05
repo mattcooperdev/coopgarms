@@ -14,15 +14,15 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ## Table of Contents
 * [User Experience Design (UX)](#UX)
-    * [The Strategy Plane](#The-Strategy-Plane)
-        * [Site Goals](#Site-Goals)
-        * [Epics](#Epics)
-        * [User Stories](#User-Stories)
-    * [The Scope Plane](#The-Scope-Plane)
-        * [Opportunities](#Opportunities)
-    * [The Skeleton Plane](#The-Skeleton-Plane)
-        * [Wireframes](#Wireframe-mockups)
-        * [Database Schema](#Database-Schema)
+    * [The Strategy Plane](#the-strategy-plane)
+        * [Site Goals](#site-goals)
+        * [Epics](#epics)
+        * [User Stories](#user-stories)
+    * [The Scope Plane](#the-scope-plane)
+        * [Opportunities](#opportunities)
+    * [The Skeleton Plane](#the-skeleton-plane)
+        * [Wireframes](#wireframe-mockups)
+        * [Database Schema](#database-schema)
     * [The Surface Plane](#The-Surface-Plane)
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
@@ -69,33 +69,31 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 From the Epics, 41 User stories were developed. Each story was assigned a classification of Must-Have, Should-Have, Could-Have or Won't Have. Inexperience with Django and time constraints during development left me completing 23 of the 24 User stories. I will however revisit the project at a later time for improvement. All of this information is avaialble on this [kanban board](https://github.com/mattcooperdev/coopgarms/projects/1).
 
-These are the user stories that were completed within the projects first release, by Epic.
+#### As a first time user/potential customer -
 
-1. Initial Django setup
-		
-2. User Profile
-	
-3. User login
-	
-4. Site Owner objectives 
-	
-5. User Login/Logout
+- Easily understand the site's purpose and learn more about the services offered.
+- Easily navigate to all relevant pages.
+- Easily find product details and prices to allow me to make an informed decision.
+- Create an account to store personal and purchase information.
+- Purchase a product.
+- Sign up for the company newsletter.
+- Reas the blog articles.
 
-6. Product Management
+#### As a return user/customer -
 
-7. Product Viewing
+- Login to my account.
+- View and adjust purchase information and maintain user information such as delivery address and payment info.
+- View my order history.
+- Write a review to any product purchased. 
+- Cancel/edit my profile.
+- Easily find any relevant order updates.
+- Sign up/cancel my subscription to the newsletter.
 
-8. Product Wishlist
+#### As an admin user -
 
-9. Shopping Cart
-
-10. Checkout
-
-11. Order Status 
-
-12. Product Reviews
-
-13. Web Marketing
+- Log in to an admin account.
+- Add, remove or update any products.
+- Add posts to the site's info blog.
 
 	
 ### The Scope Plane
@@ -103,13 +101,14 @@ These are the user stories that were completed within the projects first release
 **Features planned:**
 
 * User Profile - Create, Read, Update and Delete
-* Posts - Users can create, read, update and delete their own posts
-* Other Users posts - Users can read, like, and comment on other Users' posts
-* Profiles - Users can view other user profiles
-* Users can login to their account, change their password or their email
+* Users can make purchases
+* Users need to be registered and logged in to save purchase and delivery details, along with order history
+* Reviews - Users can create, read, update and delete their own posts
+* Other Users reviews - Users can read reviews left by others
+* Users can read the blog posts
+* Users can login to their account, change their password, email and delivery and (or) billing address
 * Users can reset their password if they forget it
 * Users can logout of their account
-* Users need to be registered and logged in to create and like posts and access other users profiles.
 * Responsive Design - the site needs to be fully responsive to cover a wide spectrum of screen sizes
 
 
@@ -119,14 +118,11 @@ Arising from user stories
 | Opportunities | Importance | Viability / Feasibility
 | ------ | :------: | :------: |
 | ** Provide users the ability to create an account ** | 5 | 5 |
-| ** Provide users the ability to create posts ** | 5 | 5 |
-| ** Provide users the ability to edit posts ** | 5 | 5 |
-| ** Provide users the ability to view posts ** | 5 | 5 |
-| ** Provide users the ability to delete posts ** | 5 | 5 |
+| ** Provide users the ability to make purchases ** | 5 | 5 |
+| ** Provide users the ability to edit account details ** | 5 | 5 |
+| ** Provide users the ability to view order history ** | 5 | 5 |
 | ** Provide users the ability to edit their account ** | 5 | 5 |
-| ** Provide users the ability to view other accounts ** | 5 | 5 |
 | ** Provide users the ability to delete their account ** | 5 | 5 |
-| ** Provide users the ability to like a post ** | 3 | 5 |
 | ** Provide users the ability to access the site on any device ** | 5 | 5 |
 
 ### The Skeleton Plane
@@ -262,7 +258,7 @@ Other than this, I believe all other bugs to be out of this site; the major issu
 
 * Python
     * The following python modules were used on this project:
-        * asgiref==3.5.1
+      ```  * asgiref==3.5.1
         * cloudinary==1.29.0
         * dj-database-url==0.5.0
         * dj3-cloudinary-storage==0.0.6
@@ -278,7 +274,7 @@ Other than this, I believe all other bugs to be out of this site; the major issu
         * python3-openid==3.2.0
         * pytz==2022.1
         * requests-oauthlib==1.3.1
-        * sqlparse==0.4.2
+        * sqlparse==0.4.2 ```
 
 * Django
     * Django was used as the main python framework in the development of this project
