@@ -32,6 +32,11 @@
                     <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
             </div>
+            {% if request.user == profile.user %}
+            <div class="column">
+                <a class="btn btn-danger" href="{% url 'delete_profile' %}">Delete Profile</a>
+            </div>
+            {% endif %}
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Order History</p>
                 <div class="order-history table-responsive">

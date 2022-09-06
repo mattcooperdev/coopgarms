@@ -3,6 +3,8 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    '''Profile form with placeholders and class
+    attributes added to focus fields '''
     class Meta:
         model = UserProfile
         exclude = ('user',)
@@ -32,3 +34,12 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+
+class UserDeleteForm(forms.ModelForm):
+    '''form to delete User'''
+    email = forms.EmailField()
+
+    class Meta:
+        model = UserProfile
+        fields = ['email']

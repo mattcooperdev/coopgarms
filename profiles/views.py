@@ -1,11 +1,12 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 
 from checkout.models import Order
 
 from .models import UserProfile
-from .forms import UserProfileForm
+from .forms import UserProfileForm, UserDeleteForm
 
 
 @login_required
@@ -52,3 +53,26 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def deleteProfile(request):
+    '''
+    View to delete profile after confirming email address
+    '''
+    profile = get_object_or_404(UserProfile, user=request.user)
+    if request.method == 'POST':
+        form = UserDeleteForm(request.POST)
+        if form.is_valid():
+            if form.cleaned_data.get('email') == profile.user.email:
+                user = request.user
+                logout(request)
+                user.delete()
+                messages.success(request, 'Account deleted!')
+                return redirect(reverse('home'))
+            else:
+                messages.error(request, 'Incorrect email entered!')
+    else:
+        form = UserDeleteForm()
+        context = {'form': form}
+        return render(request, 'profiles/delete_profile.html', context)
