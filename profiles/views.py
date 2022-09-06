@@ -20,7 +20,8 @@ def profile(request):
             messages.success(request, 'Profile updated successfully')
         else:
             messages.error(request,
-                           'Update failed. Please ensure the form is valid.')
+                           'Update failed.\
+                            Please check details and try again.')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -36,6 +37,7 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    '''shows history of completed orders'''
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
@@ -43,7 +45,7 @@ def order_history(request, order_number):
         'A confirmation email was sent on the order date.'
     ))
 
-    template= 'checkout/checkout_success.html'
+    template = 'checkout/checkout_success.html'
     context = {
         'order': order,
         'from_profile': True,
