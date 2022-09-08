@@ -7,8 +7,8 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.template.loader import render_to_string
 from products.models import Product
-from .models import Order, OrderLineItem
 from profiles.models import UserProfile
+from .models import Order, OrderLineItem
 
 
 class StripeWH_Handler:
@@ -25,7 +25,7 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact.email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
