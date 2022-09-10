@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xxd318-=yh%6mq#)9@olv$v+h6e2+j)pz_b-s6-w-q@@4n-f@%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['coopgarms.herokuapp.com', 'localhost']
 
 
 # Application definition
