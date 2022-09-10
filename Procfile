@@ -1,1 +1,1 @@
-web : gunicorn coopgarms.wsgi:application
+web: gunicorn coopgarms.wsgi:application
