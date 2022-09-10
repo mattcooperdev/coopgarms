@@ -4,7 +4,8 @@ from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
-
+    '''custom product form which gives friendly 
+    names and applies relevant css'''
     class Meta:
         model = Product
         fields = '__all__'
