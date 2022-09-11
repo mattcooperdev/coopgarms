@@ -71,13 +71,12 @@ From the Epics, 41 User stories were developed. Each story was assigned a classi
 
 #### As a first time user/potential customer -
 
-- Easily understand the site's purpose and learn more about the services offered.
-- Easily navigate to all relevant pages.
-- Easily find product details and prices to allow me to make an informed decision.
-- Create an account to store personal and purchase information.
-- Purchase a product.
+- I would like to search for products so that I can easily find what I am looking for [#29](https://github.com/mattcooperdev/coopgarms/issues/29)
+- I can view products by category so that I can easily find what products I want [#30](https://github.com/mattcooperdev/coopgarms/issues/30)
+- I can create an account so that I don't have to re-enter my details every time I place an order [#19](https://github.com/mattcooperdev/coopgarms/issues/19)
+- I can add products to my Cart so that I can purchase them [#33](https://github.com/mattcooperdev/coopgarms/issues/33)
 - Sign up for the company newsletter.
-- Reas the blog articles.
+- Read the blog articles.
 
 #### As a return user/customer -
 
@@ -199,9 +198,9 @@ A common footer is utilised through out the site to encourage users to visit the
 ![footer](assets/screenshots/footer.png)
 
 
-#### Post Card
+#### Product Card
 
-The post card on the home page gives the title, image and author details, along with the creation date and like indicator. A hover effect is used to direct the User easily and a stretched link works over the entirity of the card. 
+The post card on the home page gives the title, image and item amount, along with the rating. 
 
 ![Standard Post Card](assets/screenshots/post-card.png)
 
@@ -289,7 +288,7 @@ Other than this, I believe all other bugs to be out of this site; the major issu
     * Bootstrap was used for general layout and spacing requirements for the site.
 * Font Awesome
     * Was used for access to several icons for different sections where icons were appropriate.
-* Cloudinary
+* AWS
     * Used for the media storage of profile and post images. 
 * CSS
     * Custom css was written for areas on the site to implement custom styling.
@@ -304,58 +303,74 @@ Other than this, I believe all other bugs to be out of this site; the major issu
 * GitHub for writing the code 
 * Heroku for the deployment
 * Canva for the logo creation
-* Balsamiq for the Wireframes
+* Figma for the Wireframes
 * Lucid for the database schema
 
 #### Resources Used
 * Django Documentation was invaluable throughout the development process
 * Django AllAuth documentation
 
-
 ## Deployment
 
-The site was deployed via Heroku, and the live link can be found here - [Wavey](https://wavey-django.herokuapp.com/)
+The site was deployed via Heroku, and the live link can be found here - [Coopgarms](https://coopgarms-django.herokuapp.com/)
 
-### Project Deployment
+### Deploying to Heroku
 
-To deploy the project through Heroku I followed these steps:
-* Sign up / Log in to [Heroku](https://www.heroku.com/)
-* From the main Heroku Dashboard page select 'New' and then 'Create New App'
-* Give the project a name - I entered wavey-blog and select a suitable region, then select create app. The name for the app must be unique.
-* This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
-* Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
-* Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
-* Within the django app repository create a new file called env.py - within this file import the os library and set the environment variable for the DATABASE_URL pasting in the address copied from Heroku. The line should appear as os.environ["DATABASE_URL"]= "Paste the link in here"
-* Add a secret key to the app using os.environ["SECRET_KEY"] = "your secret key goes here"
-* Add the secret key just created to the Heroku Config Vars as SECRET_KEY for the KEY value and the secret key value you created as the VALUE
-* In the settings.py file within the django app, import Path from pathlib, import os and import dj_database_url
-* insert the line if os.path.isfile("env.py"): import env
-* remove the insecure secret key that django has in the settings file by default and replace it with SECRET_KEY = os.environ.get('SECRET_KEY')
-* replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} ensure the correct indentation for python is used.
-* In the terminal migrate the models over to the new database connection
-* Navigate in a browser to cloudinary, log in, or create an account and log in. 
-* From the dashboard - copy the CLOUDINARY_URL to the clipboard
-* in the env.py file created earlier - add os.environ["CLOUDINARY_URL"] = "paste in the Url copied to the clipboard here"
-* In Heroku, add the CLOUDINARY_URL and value copied to the clipboard to the config vars
-* Also add the KEY - DISABLE_COLLECTSTATIC with the Value - 1 to the config vars
-* this key value pair must be removed prior to final deployment
-* Add the cloudinary libraries to the list of installed apps, the order they are inserted is important, 'cloudinary_storage' goes above 'django.contrib.staitcfiles' and 'cloudinary' goes below it.
-* in the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
-* Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-* Change the templates directory to TEMPLATES_DIR - 'DIRS': [TEMPLATES_DIR]
-* Add Heroku to the ALLOWED_HOSTS list the format will be the app name given in Heroku when creating the app followed by .herokuapp.com
-* In your code editor, create three new top level folders, media, static, templates
-* Create a new file on the top level directory - Procfile
-* Within the Procfile add the code - web: guincorn PROJECT_NAME.wsgi
-* In the terminal, add the changed files, commit and push to GitHub
-* In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors.
-* Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
+To deploy this application to heroku first I made sure to establish a requirements.txt and Procfile as heroku needs these to operate. First into the terminal to establish the requirements.txt file enter:
+
+```sh
+pip3 freeze --local > requirements.txt
+```
+
+Then to create the Procfile:
+
+```sh
+echo web: gunicorn tippy.wsgi:application > Procfile
+```
+
+- Navigated to [Heroku](https://www.heroku.com/).
+- Navigate to the dashboard and select 'New' - 'Create new app'
+- Enter a unique application name and select region then click 'Create app'
+- Navigate to the new apps overview page, under installed add-ons click 'configure Add-ons'. Search for 'Heroku Postgres' and select to add it to add-ons.
+- To set up automatic deployment I selected 'GitHub' under the 'Deployment method' section. Then selected my github profile and the name of the repository containing my code.
+- I then added my config variables to Heroku by navigating to settings, scrolling down and clicking 'Reveal Config Vars'. Then entering the key value pairs.
+- I then returned to the deploy tab and selected 'Enable Automatic deployment'.
+- Once the app is deployed the live site can be accessed by selecting the 'Open app' button at the top right of the page.
+
+### Configuring Stripe
+
+- Login to stripe
+- Select the 'new business' button at the top left of the screen and enter the name.
+- Navigate to the products tab and add products using the add product button.
+- Navigate to the 'developers' tab in the top right then 'webhooks' in the left navigation menu.
+- Select 'Add an endpoint'
+- Enter the endpoint url (https://coopgarms.herokuapp.com/checkout/webhook/)
+- Click 'select events' then select all events and 'Add events'.
+- Select Add endpoint.
+- Navigate to settings, then email under business settings.
+- Turn on, 'email customers about successful payments'.
+- Entered config vars to heroku for the stripe public, secret and webhook keys.
+- The public and secret keys are located in the upper right section of the developers tab.
+- The webhook secret is located in the business endpoint of the webhooks section of the developer tab, under signing secret.
+
+### Configuring Gmail
+
+- Log in to gmail.
+- Navigate to settings, then select accounts and Import > other google account settings > Security > Signing into google.
+- Click to turn on 2 step verification and follow instructions to verify.
+- Return to the security page and select the new option 'App passwords' under signing into google.
+- For app select 'Mail' and under select device select other and type 'django'.
+- Copy the generated app password and save it as a config variable in heroku along with the gmail email account.
+  ```
+  EMAIL_HOST_PASS: generatedAppPassword
+  EMAIL_HOST_USER: example@gmail.com
+  ```
 
 #### Forking the repository
 By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
 This can be done by
     * Log into GitHub or create an account.
-    * Locate the repository at https://github.com/YesCoops/wavey.
+    * Locate the repository at https://github.com/mattcooperdev/coopgarms.
     * At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
     * A copy of the repository should now be created in your own repository.
 
