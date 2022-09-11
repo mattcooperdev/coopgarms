@@ -74,7 +74,7 @@ class StripeWH_Handler:
                 profile.default_county = shipping_details.address.state
                 profile.save()
 
-        # will attempt to look for order five times from Stripe before 
+        # will attempt to look for order five times from Stripe before
         # creating order
         order_exists = False
         attempt = 1
