@@ -29,7 +29,7 @@ def add_blog(request):
     try:
         if not request.user.is_superuser:
             messages.error(request, "Sorry, only accessible by site owners.")
-            return redirect(reverse("home"))
+            return redirect(reverse('home'))
         if request.method == 'POST':
             form = BlogForm(request.POST, request.FILES)
             if form.is_valid():
@@ -37,10 +37,11 @@ def add_blog(request):
                 messages.success(request, 'Successfully added new blog post!')
                 return redirect(reverse('blog'))
             else:
-                messages.error(request, 'Failed to add post. Please ensure the form is valid.')
+                messages.error(request, 'Failed to add post.\
+                    Please ensure the form is valid.')
         else:
             form = BlogForm()
-            
+
         template = 'blog/add_blog.html'
         context = {
             'form': form,
@@ -66,7 +67,8 @@ def edit_blog(request, blog_id):
                 messages.success(request, 'Successfully updated blog!')
                 return redirect(reverse('blog'))
             else:
-                messages.error(request, 'Failed to update post. Please ensure the form is valid.')
+                messages.error(request, 'Failed to update post.\
+                    Please ensure the form is valid.')
                 return
         else:
             form = BlogForm(instance=blog)

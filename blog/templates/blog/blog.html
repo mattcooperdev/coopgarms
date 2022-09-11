@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block extra_title %}
+- Blogs
+{% endblock %}
+
+{% block content %}
+<section class="blog center-align z-depth-4">
+    <h1 class="hidden">Blog</h1>
+    <div class="container row">
+        {% if request.user.is_superuser %}
+        <div class="col s12 m10 l8 offset-m1 offset-l2 add-blog-container">
+            <a class="primaryAction hoverable button" href="{% url 'add_blog' %}">Add New Post</a>
+        </div>
+        {% endif %}
+        {% for blog in blogs %}
+        <div class="col s12 m10 l8 offset-m1 offset-l2">
+            <div class="card custom-card">
+                <span class="card-title capitalise">{{ blog.title }}</span>
+                <div class="card-image">
+                    {% if blog.image_url %}
+                    <img class="responsive-img" alt="blog post decorative image" src="{{ blog.image_url }}">
+                    {% else %}
+                    <img class="responsive-img" alt=""
+                        src="">
+                    {% endif %}
+                </div>
+                <div class="card-content">
+                    <p>{{ blog.content }}</p>
+                </div>
+                <span class="center">author: {{ blog.author }}</span>
+                {% if request.user.is_superuser %}
+                <div class="row card-action">
+                    <a class="left blue-text" href="{% url 'edit_blog' blog.id %}">edit</a>
+                    <a class="right red-text dropdown-trigger" href="#"
+                        data-target="delete-confirmation{{blog.id}}">delete</a>
+                    <ul id="delete-confirmation{{blog.id}}" class='dropdown-content'>
+                        <li><a class="red-text" href="{% url 'delete_blog' blog.id %}">Confirm</a></li>
+                        <li><a class="grey-text" href="#!">Cancel</a></li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="divider"></div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

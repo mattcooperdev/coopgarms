@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['coopgarms.herokuapp.com', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-mattcooperdev-coopgarms-9vbe9xekykq.ws-eu64.gitpod.io']
 
 # Application definition
 
