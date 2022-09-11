@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/') no-repeat center center fixed;
+    background: url('/media/pexels-daniel-adesina-833052.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -23,14 +23,19 @@ body {
     text-transform: uppercase;
 }
 
+.hero-font {
+    text-transform: uppercase;
+    font-size: 10rem;
+}
+
 .main-logo-link {
     width: fit-content;
 }
 
 .shop-now-button {
-    background: black;
+    border: 2px solid white;
     color: white;
-    min-width: 260px;
+    width: 13rem;
 }
 
 .btn-black {

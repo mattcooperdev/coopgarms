@@ -49,10 +49,10 @@
 
 <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row bg-black pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0">Coopgarms Logo</h2>
+                    <h2 class="logo-font text-white my-0">Coopgarms Logo</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -61,7 +61,7 @@
                         <input class="form-control rounded-0" type="text" name="q"
                             placeholder="Search our garms">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-white border border-white rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -71,24 +71,9 @@
                 </form>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Garms
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                        <a href="{% url 'products' %}?category=t_shirts" class="dropdown-item">T-Shirts</a>
-                        <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
-                        <a href="{% url 'products' %}?category=hoodies" class="dropdown-item">Hoodies</a>
-                        <a href="{% url 'products' %}?category=pants" class="dropdown-item">Pants</a>
-                        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                    </div>
-                </li>
-            </div>
-
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
@@ -110,7 +95,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
