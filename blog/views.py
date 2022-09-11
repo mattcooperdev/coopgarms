@@ -16,6 +16,7 @@ def all_blogs(request):
 
             context = {
                 'blogs': blogs,
+                'on_profile_page': True,
             }
 
             return render(request, 'blog/blog.html', context, status=200)
