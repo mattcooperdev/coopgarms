@@ -111,6 +111,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.text-center i p {
+    color : yellow;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -239,7 +243,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #faf612; /* text-info */
 }
 
 /* Product Form */
@@ -313,10 +317,6 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
-
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
@@ -336,11 +336,11 @@ input[name='q']::placeholder {
 /* Footer */
 
 .footer p {
-    color: #000;
+    color: #fff;
 }
 
 .footer i {
     font-size: 2rem;
     margin: 0.5rem;
-    color: #000;
+    color: #fff;
 }
