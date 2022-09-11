@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'account/base.html' %}
 {% load static %}
 
 {% block extra_css %}
@@ -9,21 +9,23 @@
 - Add Blog
 {% endblock %}
 
-{% block content %}
-<main class="main-container blog">
-    <div class="container hero-container valign-wrapper hero-content">
-        <div class="custom-card">
-            <h2 class="capitalise">Add Blog Post</h2>
-
-            <form class="flow-text" method="POST" action="{% url 'add_blog' %}">
+{% block inner_content %}
+<div class="container">
+    <div class="w-100 h-100 p-3">
+        <div class="form-group">
+            <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form }}
-                <div class="blog-button-container">
-                    <a class="button-secondary hoverable secondaryAction" href="{% url 'blog' %}">Cancel</a>
-                    <button class="primaryAction hoverable button" type="submit">Add</button>
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Create A Post</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group">
+                    <a class="btn-warning" href="{% url 'blog' %}">Cancel</a>
+                    <button class="btn btn-outline-info mt-2" type="submit">Post</button>
                 </div>
             </form>
         </div>
     </div>
-</main>
+</div>
+
 {% endblock %}

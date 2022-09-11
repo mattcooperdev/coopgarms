@@ -1,0 +1,15 @@
+.blog-overlay {
+    background: url('media/pexels-foi-international-1036396.jpg') no-repeat center center fixed;
+    height: calc(100vh - 164px);
+}
+
+.card-body {
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+}
+
+.card-text {
+    color: red;
+}
+

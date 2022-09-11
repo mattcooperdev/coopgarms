@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* from Bulma */
@@ -109,10 +109,6 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
-}
-
-.text-center i p {
-    color : yellow;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -243,7 +239,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #faf612; /* text-info */
+	color: #dc3545; /* text-info */
 }
 
 /* Product Form */
@@ -334,6 +330,12 @@ input[name='q']::placeholder {
 }
 
 /* Footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
 
 .footer p {
     color: #fff;
