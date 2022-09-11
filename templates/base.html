@@ -58,8 +58,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search our site">
+                        <input class="form-control rounded-0" type="text" name="q"
+                            placeholder="Search our garms">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -70,6 +70,21 @@
                     </div>
                 </form>
             </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Garms
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                        <a href="{% url 'products' %}?category=t_shirts" class="dropdown-item">T-Shirts</a>
+                        <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
+                        <a href="{% url 'products' %}?category=hoodies" class="dropdown-item">Hoodies</a>
+                        <a href="{% url 'products' %}?category=pants" class="dropdown-item">Pants</a>
+                        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                    </div>
+                </li>
+            </div>
+
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -84,6 +99,7 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_blog' %}" class="dropdown-item">Blog Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
