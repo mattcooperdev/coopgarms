@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Blog(models.Model):
+    '''DB layout for Blog'''
     title = models.CharField(max_length=100, null=False, blank=False)
     author = models.CharField(max_length=100, null=False, blank=False)
     date = models.DateTimeField(auto_now_add=True, null=False, blank=False)
