@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="blog-overlay"></div>
+<div class="overlay"></div>
 <div class="container">
     <div class="container row">
         {% if request.user.is_superuser %}
@@ -20,8 +20,8 @@
         {% endif %}
         <h1 class="hidden">Blog</h1>
         {% for blog in blogs %}
-        <div class="blog-card" style="width: 100%;">
-            <div class="card-body" style="background-color: white; ">
+        <div class="blog-card" style="width: 50%;">
+            <div class="card-body">
                 <h5>{{ blog.title }}</h5>
                 <div class="card-image">
                     {% if blog.image_url %}
@@ -36,7 +36,7 @@
                 <span class="center">author: {{ blog.author }}</span>
                 {% if request.user.is_superuser %}
                 <div class="">
-                    <a class="btn-outline-info href="{% url 'edit_blog' blog.id %}">edit</a>
+                    <a class="btn-outline-info" href="{% url 'edit_blog' blog.id %}">edit</a>
                     <a class="btn-warning" href="{% url 'delete_blog' blog.id %}">Delete</a>
                 </div>
                 {% endif %}
