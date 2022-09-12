@@ -1,15 +1,15 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav">
         <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'home' %}" id="home-link">Home</a>
+        </li>
+
+        <li class="list-inline-item">
+            <a href="{% url 'blog' %}"class="text-white nav-link my-0">Blog</a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="text-white nav-link my-0" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Garms
-            </a>
+            <a class="text-white nav-link my-0" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Garms</a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=t_shirts" class="dropdown-item">T-Shirts</a>
                 <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
@@ -17,19 +17,6 @@
                 <a href="{% url 'products' %}?category=pants" class="dropdown-item">Pants</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
-        </li>
-
-        <li class="list-inline-item dropdown">
-            <a class="text-white nav-link my-0" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Brands
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?brand=anti_social_social_club" class="dropdown-item">Anti Social</a>
-                <a href="{% url 'products' %}?brand=drew" class="dropdown-item">Drew</a>
-                <a href="{% url 'products' %}?=off_white" class="dropdown-item">Off-White</a>
-                <a href="{% url 'products' %}?category=palace" class="dropdown-item">Palace</a>
-                <a href="{% url 'products' %}?category=supreme" class="dropdown-item">Supreme</a>
-            </div>
-        </li>        
+        </li>     
     </ul>
 </div>
