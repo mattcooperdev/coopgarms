@@ -111,6 +111,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.navbar-toggler {
+    color: #fff !important;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
