@@ -84,6 +84,18 @@
                             <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                         </div>
                     </li>
+                    <li class="list-inline-item dropdown">
+                        <a class="text-white nav-link my-0" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Brands
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                            <a href="{% url 'products' %}?brand=anti_social_social_club" class="dropdown-item">Anti Social</a>
+                            <a href="{% url 'products' %}?brand=drew" class="dropdown-item">Drew</a>
+                            <a href="{% url 'products' %}?=off_white" class="dropdown-item">Off-White</a>
+                            <a href="{% url 'products' %}?category=palace" class="dropdown-item">Palace</a>
+                            <a href="{% url 'products' %}?category=supreme" class="dropdown-item">Supreme</a>
+                        </div>
+                    </li>
 
                     <li class="list-inline-item">
                         <a href="{% url 'blog' %}"class="text-white nav-link my-0">Blog</a>
