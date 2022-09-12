@@ -15,6 +15,7 @@
     {% endblock %}
 
     {% block corecss %}
+    <!-- Bootstrap, Google Fonts and CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +29,7 @@
     {% endblock %}
 
     {% block corejs %}
+    <!-- Bootstrap, Font Awesome and Stripe -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -48,6 +50,7 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-black pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -55,6 +58,7 @@
                     <h2 class="logo-font text-white my-0">Coopgarms Logo</h2>
                 </a>
             </div>
+            <!--Search-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -70,6 +74,7 @@
                     </div>
                 </form>
             </div>
+            <!--Products dropdown-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -84,7 +89,11 @@
                             <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                         </div>
                     </li>
-
+                    <!--Blog-->
+                    <li class="list-inline-item">
+                        <a href="{% url 'blog' %}"class="text-white nav-link my-0">Blog</a>
+                    </li>
+                    <!--Account Dropdown-->
                     <li class="list-inline-item dropdown">
                         <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -106,8 +115,9 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!--Cart-->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
+                        <a class="text-white nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -124,6 +134,7 @@
                 </ul>
             </div>
         </div>
+        <!--Main Nav and Mobile View-->
         <div class="row bg-black">
             <nav class="navbar navbar-expand-lg w-100 hide-nav">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
