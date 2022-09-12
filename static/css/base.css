@@ -206,12 +206,6 @@ input[name='q']::placeholder {
   }
 }
 
-@media screen and (min-width: 992px) {
-    .hide-nav {
-        display: none;
-    }
-}
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -308,6 +302,10 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 164px;
     }
+
+    .hide-nav {
+        display: none;
+    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -350,6 +348,20 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+}
+
+@media (max-width: 770px) {
+    .hero-font {
+        text-transform: uppercase;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-font {
+        text-transform: uppercase;
+        font-size: 4rem;
     }
 }
 
