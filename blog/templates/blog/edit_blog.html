@@ -6,22 +6,22 @@
 {% endblock %}
 
 {% block extra_title %}
-- Add Blog
+- Edit Blog
 {% endblock %}
 
 {% block inner_content %}
 <div class="container">
     <div class="w-100 h-100 p-3">
         <div class="form-group">
-            <form method="POST" enctype="multipart/form-data" action="{% url 'add_blog' %}">
+            <form method="POST" enctype="multipart/form-data" action="{% url 'edit_blog' blog.id %}">
                 {% csrf_token %}
                 <fieldset class="form-group">
-                    <legend class="border-bottom mb-4">Create A Post</legend>
+                    <legend class="border-bottom mb-4">Edit Blog Post</legend>
                     {{ form|crispy }}
                 </fieldset>
                 <div class="form-group">
                     <a class="btn-warning" href="{% url 'blog' %}">Cancel</a>
-                    <button class="btn btn-outline-info mt-2" type="submit">Add/button>
+                    <button class="btn btn-outline-info mt-2" type="submit">Confirm</button>
                 </div>
             </form>
         </div>
