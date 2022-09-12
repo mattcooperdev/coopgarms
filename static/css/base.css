@@ -86,7 +86,8 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: black;
+    opacity: 0.4;
 	z-index: -1;
 }
 
@@ -115,6 +116,17 @@ input[name='q']::placeholder {
 
 .navbar-toggler {
     color: #fff !important;
+}
+
+.product-title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.product-link a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -344,7 +356,7 @@ input[name='q']::placeholder {
 /* Footer */
 
 .footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     right: 0;
