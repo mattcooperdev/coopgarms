@@ -10,40 +10,42 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="blog-container">
-        {% if request.user.is_superuser %}
-        <div class="">
-            <a class="btn-outline-info" href="{% url 'add_blog' %}">Add New Post</a>
-        </div>
-        {% endif %}
-        <h1 class="blog-head">Blog</h1>
-        {% for blog in blogs %}
-        <div class="row">
-            <div class="blog-card" style="width: 50%;">
-                <div class="card-body">
-                    <h4>{{ blog.title }}</h4>
-                    <div class="card-image">
-                        {% if blog.image_url %}
-                        <img class="card-img-top" alt="blog post decorative image" src="{{ blog.image_url }}">
-                        {% else %}
-                        <img class="responsive-img" alt="" src="">
+<div class="pic-overlay">
+    <div class="container-fluid">
+        <div class="blog-container">
+            {% if request.user.is_superuser %}
+            <div class="">
+                <a class="btn-outline-info" href="{% url 'add_blog' %}">Add New Post</a>
+            </div>
+            {% endif %}
+            <h1 class="blog-head">Blog</h1>
+            {% for blog in blogs %}
+            <div class="row">
+                <div class="blog-card" style="width: 50%;">
+                    <div class="card-body">
+                        <h4>{{ blog.title }}</h4>
+                        <div class="card-image">
+                            {% if blog.image_url %}
+                            <img class="card-img-top" alt="blog post decorative image" src="{{ blog.image_url }}">
+                            {% else %}
+                            <img class="responsive-img" alt="" src="">
+                            {% endif %}
+                        </div>
+                        <div class="card-text">
+                            <p>{{ blog.content }}</p>
+                        </div>
+                        <span class="center">author: {{ blog.author }}</span>
+                        {% if request.user.is_superuser %}
+                        <div class="">
+                            <a class="btn-outline-info" href="{% url 'edit_blog' blog.id %}">Edit</a>
+                            <a class="btn-warning" href="{% url 'delete_blog' blog.id %}">Delete</a>
+                        </div>
                         {% endif %}
                     </div>
-                    <div class="card-text">
-                        <p>{{ blog.content }}</p>
-                    </div>
-                    <span class="center">author: {{ blog.author }}</span>
-                    {% if request.user.is_superuser %}
-                    <div class="">
-                        <a class="btn-outline-info" href="{% url 'edit_blog' blog.id %}">Edit</a>
-                        <a class="btn-warning" href="{% url 'delete_blog' blog.id %}">Delete</a>
-                    </div>
-                    {% endif %}
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 {% endblock %}
