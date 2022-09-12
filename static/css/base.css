@@ -194,6 +194,12 @@ input[name='q']::placeholder {
   }
 }
 
+@media screen and (min-width: 992px) {
+    .hide-nav {
+        display: none;
+    }
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
