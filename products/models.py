@@ -1,5 +1,7 @@
 from django.db import models
 
+from profiles.models import UserProfile
+
 
 class Category(models.Model):
     '''Model to identify category of product'''
@@ -31,6 +33,9 @@ class Product(models.Model):
                                  null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    users_wishlist = models.ManyToManyField(UserProfile,
+                                            related_name="user_wishlist",
+                                            blank=True)
 
     def __str__(self):
         return self.name
