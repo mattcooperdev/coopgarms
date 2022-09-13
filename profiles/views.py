@@ -78,7 +78,7 @@ def deleteProfile(request):
 def wishlist(request):
     '''view to render wishlist'''
     products = Product.objects.filter(users_wishlist=request.user)
-    return render(request, "profiles/user_wish_list.html",
+    return render(request, "profiles/wishlist.html",
                   {"wishlist": products})
 
 

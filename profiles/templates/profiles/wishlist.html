@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_title %}
+- WishList
+{% endblock %}
+
+{% block content %}
+<div class="pic-overlay"></div>
+<div class="container mb-2">
+  <div class="row">
+    <div class="col">
+      <hr>
+      <h2 class="blog-head">Your WishList</h2>
+      <hr>
+    </div>
+  </div>
+
+  {% if wishlist %}
+  {% for product in wishlist  %}
+
+  <div class="card mb-3 rounded-0">
+    <div class="row g-0">
+      <div class="col-md-2">
+        <img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name | upper }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text" class="text-muted">£{{ product.price }}</p>
+          <a type="button" class="btn" href="{% url 'user_wishlist' product.id %}">Remove from Wishlist</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+  {% else %}
+  <p class="card-text">No products have been added to your wishlist yet</p>
+  {% endif %}
+</div>
+
+{% endblock %}
