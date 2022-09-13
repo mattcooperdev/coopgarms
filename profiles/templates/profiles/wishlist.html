@@ -41,7 +41,7 @@
           <h5 class="card-title">{{ product.name | upper }}</h5>
           <p class="card-text">{{ product.description }}</p>
           <p class="card-text" class="text-muted">£{{ product.price }}</p>
-          <a type="button" class="btn" href="{% url 'user_wishlist' product.id %}">Remove from Wishlist</a>
+          <a type="button" class="btn btn-black" href="{% url 'user_wishlist' product.id %}">Remove from Wishlist</a>
         </div>
       </div>
     </div>

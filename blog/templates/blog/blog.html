@@ -15,7 +15,7 @@
         <div class="blog-container">
             {% if request.user.is_superuser %}
             <div class="">
-                <a class="btn-outline-info" href="{% url 'add_blog' %}">Add New Post</a>
+                <a class="btn btn-black" href="{% url 'add_blog' %}">Add New Post</a>
             </div>
             {% endif %}
             <h1 class="blog-head">Blog</h1>
@@ -34,11 +34,11 @@
                         <div class="card-text">
                             <p>{{ blog.content }}</p>
                         </div>
-                        <span class="center">author: {{ blog.author }}</span>
+                        <span class="">Author: {{ blog.author }}</span>
                         {% if request.user.is_superuser %}
                         <div class="">
-                            <a class="btn-outline-info" href="{% url 'edit_blog' blog.id %}">Edit</a>
-                            <a class="btn-warning" href="{% url 'delete_blog' blog.id %}">Delete</a>
+                            <a class="btn btn-outline-info m-2" href="{% url 'edit_blog' blog.id %}">Edit</a>
+                            <a class="btn btn-warning m-2" href="{% url 'delete_blog' blog.id %}">Delete</a>
                         </div>
                         {% endif %}
                     </div>
