@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="pic-overlay">
+<div class="pic-overlay"></div>
     <div class="container-fluid">
         <div class="blog-container">
             {% if request.user.is_superuser %}
@@ -47,5 +47,4 @@
             {% endfor %}
         </div>
     </div>
-</div>
 {% endblock %}

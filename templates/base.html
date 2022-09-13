@@ -55,11 +55,11 @@
         <div id="topnav" class="row bg-black pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-white my-0">Coopgarms Logo</h2>
+                    <img src="media/logo.png" class="logo my-0">
                 </a>
             </div>
             <!--Search-->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control rounded-0" type="text" name="q"
@@ -75,7 +75,7 @@
                 </form>
             </div>
             <!--Products dropdown-->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-white nav-link my-0" href="{% url 'products' %}" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

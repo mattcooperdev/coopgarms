@@ -28,3 +28,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('blog/', include('blog.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'products.views.error_404'
+handler500 = 'products.views.error_500'
