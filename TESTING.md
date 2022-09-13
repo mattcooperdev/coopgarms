@@ -15,21 +15,23 @@
 
 ## Bugs and Fixes During the Development Process
 
-* Issue - Register form was returning ValuError as didn't return HttpResponse object when invalid data was input to create a User.  
-* Fix - In register function the render return was incorrectly indented when the if statement wasn't met. Amending this resolved the issue and user validation was restored.
+* Issue - Receving 404 error when trying to access Wishlist 
+* Fix - In wishlist view the render return was incorrectly indented. Amending this resolved the issue and user validation was restored.
 
-* Issue - When submitting a new post an integrity error for a duplicate primary key was being shown. The duplicate being created was an empty string, causing an error for the super().save() method when calling the form_valid function. 
-* Fix - Creating a save function in the Post model which looked at the newly-created slug, stripping any empty space and replacing with a hyphen, then calling the super().save() resolved the issue.
+* Issue - Order not rendering on bag page.
+* Fix - When creating the snippets for the bag templates, a mssing closing bracket on p element caused the whole page to not render. Adding this resolved the issue.
 
-* Issue - When TinyMCE widget was installed in the Create Post view, when you tried to submit a post with all required fields filled the submit request was not working. 
-* Fix - Setting the content CharField in the Post model to blank="null" resolved the issue. 
+* Issue - Stripe payment div not rendering
+* Fix - Directory for stripe elements Js file was in the wrong place, showing further down the tree as expected. Moving the directory up one branch resolved the issue.
 
-* Issue - Featured image field was not uploading related media to cloudinary when creating a Post, thus not replacing the masthead placeholder image as desired. 
-* Fix - Adding the necessary enctype="multipart/form-data" to the relevant forms sent images to cloudinary and therefore to the related post.
+* Issue - Missing logo in nav in certain pages
+* Fix - The url used was only looking up one directory (with the help of ```../``` but when going deeper into urls this would not suffice. Using Django's in-built ```{MEDIA_URL}``` before the file name resolved the issue.
+
+One issue that is still outstanding is the issue of a floating footer on some pages. With using bootstrap 4 a sitcky footer is possible, but die to layout schematic on some of the pages this cut off some important elements. It was too late into development to move to Bootstrap 5, where the footer classes are more reliable, in fear of breaking other parts of the layout, so it is a grievance that is still there. I will strive to resolve the issue as I continue to work on the Site. 
 
 
 # Wave Aim Accessibility checker:
-* After resolving low contrast issues and several missing alt tags, the WAVE report now comes back clear of all errors and contrast issues along all pages. 
+* Their is some low contrast warning in the report due to the use of an overlay on some of the pages. This overlay is hidden at site laod so I do not see it as a concern. The WAVE report now comes back clear of all major errors. 
 <details>
 <summary>Expand</summary>
 
@@ -38,14 +40,14 @@
 </details>
 
 # Lighthouse
-The lighthouse test showed varying performance scores on each post-detail page due to the varying amounts of media used over each post. As this would be uploaded by the USer on a case-by-case basis, it would be hard to control in these development stages. For a future update I would use cloudinary to resize and compress uploaded images to improve load time. 
+The lighthouse test showed varying performance scores on each page on the site due to the varying amounts of media used over each page. Using tinypng to compress uploaded images improved load time dramatically. 
 
-In general Mobile scores were lower in performance for two main reasons, cdn imports from bootstrap, jquery, and the already compressed (multiple times hero images). As a future development, I would be firstly looking to reduce load time by replacing the few lines of jquery in my custom JS file with vanilla JS instead. and secondly I would change the hero image to be imported with CSS so the second hero image (default to display: none) didn't slow down the page load time.
+In general Mobile scores were lower in performance for two main reasons, cdn imports from bootstrap, jquery, and the already compressed (multiple times hero images). As a future development, I would be firstly looking to reduce load time by replacing the few lines of jquery in my custom JS file with vanilla JS instead, and secondly I would change the hero image to be imported with CSS so the second hero image (default to display: none) didn't slow down the page load time.
 
 <details>
 <summary>Expand</summary>
 
-![Post Detail Lighthouse](assets/images/lighthouse.png)  
+![Product Page Lighthouse](assets/images/lighthouse.png)  
 
 </details>
 
@@ -53,8 +55,7 @@ In general Mobile scores were lower in performance for two main reasons, cdn imp
 # Validators
 ## [HTML](https://validator.w3.org):
 
-All pages were free from errors.
-
+One error stands in the lack of some list elements in the navbar not belonging to either an ```<ol>``` or ```<ul>```. This was due to it causing styling issues late into deployment and the time wasn't there to change. All other errors are cleared. 
 
 ## [CSS](https://jigsaw.w3.org/css-validator/):
 Checking by URL there were a lot of errors coming from the bootstrap and font awesome source code.  However my CSS file was tested by direct upload was found to be free from errors
@@ -83,9 +84,9 @@ Below is a summary of how I manually tested each user story.
 
 ## As an **Admin** I can...
 
-| Checked | ...**use a text editor within the admin panel** so that **I can create a post** |
+| Checked | ...**gain access to admin-only links** |
 |:-------:|:--------|
-| &check; | Can add a job post successfully from the admin panel using the summernote editor |
+| &check; | Can create products and blog posts from the front-end links |
 
 | Checked | ...**Log into a user interface** so that **I can easily manage data via a user interface** |
 |:-------:|:--------|
@@ -94,24 +95,22 @@ Below is a summary of how I manually tested each user story.
 
 | Checked | ... **Filter and search all custom models from the admin page** so that **I can utilize the admin page to review, edit and delete data quickly.** |
 |:-------:|:--------|
-| **Posts** |  |
-| &check; | Can search post by title |
-| &check; | Can search post by author |
-| &check; | Can filter by a user to see which posts are liked|
-| &check; | Can filter by date created |
-| &check; | Can filter by date posted to see recent posts |
-| &check; | Can filter by status to see hidden posts/comments |
-| &check; | Can filter by approved to know what needs approving still |
-| &check; | Can filter by username and see their posts|
-| **Comments** |  |
-| &check; | Can search username |
-| &check; | Can filter by date created  |
-
-
-| Checked | ...**Approve new posts offered by the community** so that **I can ensure that posts are not malicious, false, misleading, or incomplete.** |
+| **Products** |  |
+| &check; | Can search product by name |
+| &check; | Can search product by brand |
+| &check; | Can filter by price |
 |:-------:|:--------|
-| &check; | Can approve a post individually |
-| &check; | Can approve multiple posts |
+| **Orders** |  |
+| &check; | Can search order by user |
+| &check; | Can search order by date |
+
+
+
+| Checked | ...**Create new blog posts** so that **I can keep the Site up to date with the latest streetwear fashion news.** |
+|:-------:|:--------|
+| &check; | Can create a post individually |
+| &check; | Can edit posts |
+| &check; | Can delete posts |
 
 | Checked | ...**Delete a post** so that **I can remove posts that are no longer relevant to the site.** |
 |:-------:|:--------|
@@ -136,31 +135,36 @@ Below is a summary of how I manually tested each user story.
 | &check; | New user entry visible from the database after registration |
 | &check; | Unable to register with a duplicate email or username |
 
-| Checked | ...**browse the posts** so that **I can see if I wish to register with the site or not** |
+| Checked | ...**browse the products** so that **I can see if I wish to register to use the wishlist** |
 |:-------:|:--------|
-| &check; | Can see the post previews and detailed posts |
+| &check; | Can see the product previews and detailed view |
 | &check; | Can see I need to sign up/log in to use more features |
+
+| Checked | ...**make a purchase** so that **I can receive the products I want** |
+|:-------:|:--------|
+| &check; | Can make a purchase |
+| &check; | Can check validation on address and card details |
+| &check; | Can check order progress |
+
+
+
 
 ## As a **Registered User** I can... 
 
-| Checked | ...**Create a Post** so that **I can share my knowledge with other Users** |
+| Checked | ...**create an account** so that **I can save my delivery and billing information** |
 |:-------:|:--------|
-| &check; | Can create a post form the Create a Post page  |
-| &check; | Once created post is visible on index page |
-| &check; | If updated the revised post is shown |
-| &check; | If deleted the post is removed from page and database |
-
-| Checked |  ...**See balanced forms with an included text editor where necessary** so that **I can have a pleasant visual experience across the site, and my posts look how i envisaged.** |
-|:-------:|:--------|
-| &check; | Post form formatted and includes TinyMCE widget for text area entry |
-| &check; | Comment form formatted and includes TinyMCE widget for text area entry |
-| &check; | Profile Form formatted |
-| &check; | Edit Profile form formatted with TinyMCE widget for bio |
+| &check; | Can create an account  |
+| &check; | Can edit an account and it's information |
+| &check; | Can delete an account and all information held |
+| &check; | Check on profile information |
+| &check; | Check on wishlist |
+| &check; | Add item to wishlist |
+| &check; | Delete item on wishlist |
 
 
 | Checked | ...**See appealing colors and uniform style themes**|
 |:-------:|:--------|
-| &check; |  Colors pass contrast test |
+| &check; | Colors pass contrast test |
 | &check; | Colors and styles are consistent across the site |
 
 | Checked | ...**Access the site from any size screen and still have a pleasant experience on the site** so that **I am not restricted to which devices I can use on the site** |
@@ -179,12 +183,11 @@ Below is a summary of how I manually tested each user story.
 | &check; | Sign out page is responsive from 320px up |
 | &check; | 404 page is responsive from 320px up |
 | &check; | 500 page is responsive from 320px up |
-| &check; | Pagination is responsive from 320px up |
 
 | Checked | ...**type a URL into the web browser** so that **I can access the site's various pages** |
 |:-------:|:--------|
 | &check; | All pages can be accessed by their URL when logged in |
-| &check; | When logged out, only the landing page visible|
+| &check; | When logged out, only certain oages are available |
 | &check; | Message displayed if a user is logged out and tries to access a URL which is denied |
 
 | Checked | ...**see uniformity on each page and clearly distinguish the content subject** so that **I can quickly and familiarly navigate the page.** |
@@ -197,16 +200,13 @@ Below is a summary of how I manually tested each user story.
 ## As a **Registered User** I can...
 | Checked | ...**see appropriate responses upon specific interactions with the site** so that **I know my edit, deletion, submission has been successful.**|
 |:-------:|:--------|
-| &check; | When creating a post the success message shows on screen|
-| &check; | When updating a post the success message shows on screen|
-| &check; | When deleting a post the success message shows on screen|
-| &check; | When commenting on a post the success message shows on screen|
-| &check; | When liking on a post the heart icon changes colour|
-| &check; | When unliking on a post the heart icon changes colour|
+| &check; | When updating my cart the success message shows on screen|
+| &check; | When updating my address the success message shows on screen|
 | &check; | When creating a profile the success message shows on screen|
 | &check; | When updating a profile the success message shows on screen|
 | &check; | When deleting a profile the success message shows on screen|
 | &check; | When logging in the success message shows on screen|
 | &check; | When logging out the success message shows on screen|
+| &check; | When registering an account the success message shows on screen|
 
 [Back to Readme](README.md)
