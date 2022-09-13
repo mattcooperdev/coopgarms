@@ -13,7 +13,7 @@ html {
 body {
     background: url('/media/pexels-daniel-adesina-833052.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    min-height: calc(100vh - 164px);
     width: 100%;
     color: #555;
     font-family: 'Roboto Condensed', sans-serif;
@@ -390,21 +390,13 @@ input[name='q']::placeholder {
 
 /* Footer */
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-}
-
 .footer p {
     margin: 0;
     color: #fff;
 }
 
 .footer i {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0.5rem;
     color: #fff;
 }
