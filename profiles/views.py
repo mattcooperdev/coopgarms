@@ -2,8 +2,10 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 
 from checkout.models import Order
+from products.models import Product
 
 from .models import UserProfile
 from .forms import UserProfileForm, UserDeleteForm
@@ -70,3 +72,26 @@ def deleteProfile(request):
         form = UserDeleteForm()
         context = {'form': form}
         return render(request, 'profiles/delete_profile.html', context)
+
+
+@login_required
+def wishlist(request):
+    '''view to render wishlist'''
+    products = Product.objects.filter(users_wishlist=request.user)
+    return render(request, "profiles/user_wish_list.html",
+                  {"wishlist": products})
+
+
+@login_required
+def add_to_wishlist(request, id):
+    '''view to add product to wishlist'''
+    product = get_object_or_404(Product, id=id)
+    if product.users_wishlist.filter(id=request.user.id).exists():
+        product.users_wishlist.remove(request.user)
+        messages.success(request, product.title + " has been\
+            removed from your WishList")
+    else:
+        product.users_wishlist.add(request.user)
+        messages.success(request, "Added " + product.title + " to\
+            your WishList")
+    return HttpResponseRedirect(request.META["HTTP_REFERER"])
