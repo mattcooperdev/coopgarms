@@ -2,10 +2,13 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-    <div class="row">
-        <h1 class="text-white">404</h1>
-        <p>The page you are looking for doesn't exist, or has been moved.</p>
-        <a href="{% url 'home' %}">Go Home</a>
-    </div>
+    <div class="pic-overlay"></div>
+        <div class="blog-container">
+            <div class="row">
+                <h1 class="text-white">404</h1>
+                <p>The page you are looking for doesn't exist, or has been moved.</p>
+                <a href="{% url 'home' %}">Go Home</a>
+            </div>
+        </div>
 </div>
 {% endblock %}
