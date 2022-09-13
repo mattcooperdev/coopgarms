@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://coopgarms.herokuapp.com/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/?category=t_shirts</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/?category=jackets</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/?category=hoodies</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/?category=pants</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/blog/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/bag/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/1/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/2/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/3/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/4/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/5/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/6/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/7/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/8/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/9/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/10/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/11/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/12/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/13/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/15/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/16/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/18/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/19/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/20/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/21/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/22/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/23/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/24/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/26/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/27/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/28/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/29/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/30/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/31/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/32/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/33/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/34/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/35/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/36/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/37/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/38/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/products/39/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/1</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/2</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/3</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/4</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/5</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/6</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/7</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/8</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/9</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/10</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/11</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/12</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/13</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/15</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/16</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/18</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/19</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/20</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/21</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/22</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/23</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/24</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/26</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/27</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/28</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/29</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/30</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/31</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/32</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/33</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/34</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/35</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/36</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/37</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/38</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=/profile/wishlist/add_to_wishlist/39</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F1</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F2</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F3</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F4</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F5</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F6</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F7</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F8</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F9</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F10</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F11</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F12</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F13</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F15</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F16</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F18</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F19</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F20</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F21</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F22</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F23</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F24</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F26</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F27</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F28</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F29</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F30</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F31</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F32</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F33</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F34</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F35</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F36</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F37</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F38</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F39</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F1</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F2</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F3</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F4</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F5</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F6</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F7</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F8</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F9</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F10</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F11</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F12</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F13</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F15</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F16</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F18</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F19</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F20</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F21</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F22</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F23</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F24</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F26</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F27</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F28</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F29</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F30</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F31</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F32</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F33</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F34</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F35</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F36</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F37</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F38</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://coopgarms.herokuapp.com/accounts/login/?next=%2Fprofile%2Fwishlist%2Fadd_to_wishlist%2F39</loc>
+  <lastmod>2022-09-13T17:07:27+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
