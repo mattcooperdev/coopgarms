@@ -18,6 +18,7 @@ Please note: To open any links in this document in a new browser tab, please pre
         * [Site Goals](#site-goals)
         * [Epics](#epics)
         * [User Stories](#user-stories)
+        * [SEO](#seo)
     * [The Scope Plane](#the-scope-plane)
         * [Opportunities](#opportunities)
     * [The Skeleton Plane](#the-skeleton-plane)
@@ -91,6 +92,20 @@ From the Epics, 41 User stories were developed. Each story was assigned a classi
 - As a Site Owner I can make changes to product details on the Site so that any corrections or misinformation can be amended[#26](https://github.com/mattcooperdev/coopgarms/issues/26)
 - Add posts to the site's info blog.
 
+### SEO
+
+Keyword strategies were checked with the Google metrics to establish for the business. These were checked in the UK adn Europe, where the business would imagine it's main demographic to be. These were then refined accordingly and added to the meta data and throughout the Site (mainly in the Blog and the product descriptions) to enhance SEO performance. 
+
+Sitemap and Robots files were added to further improve SEO. 
+
+Below is the facebook mockup that details the kind of posts would be created to target the businesses key demographic. Instagram would be utilised much greater in a marketing strategy due to it's visual appeal better aligning with the business goals, however a mockup was difficult to create.
+
+<details>
+<summary>Click to expand</summary>
+	
+![Facebook mock](assets/images/facebook-mock.png)
+	
+</details>
 	
 ### The Scope Plane
 
@@ -151,6 +166,7 @@ Custom Profile, Post and Comment models were built on top of the default Django 
 ![Database Schema Diagram](assets/images/db-schema.png)
 
 </details>
+
 ### The Surface Plane
 
 #### Design
