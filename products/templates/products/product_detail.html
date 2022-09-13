@@ -101,7 +101,7 @@
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
-                                <a href="#" class="btn btn-black rounded-0 text-uppercase mt-5" role="button" aria-disabled="true">Add to Wish List</a>
+                                <a href="{% url 'user_wishlist' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" role="button" aria-disabled="true">Add to Wish List</a>
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}

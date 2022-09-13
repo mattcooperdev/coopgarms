@@ -1,6 +1,5 @@
 from django.db import models
-
-from profiles.models import UserProfile
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -33,7 +32,7 @@ class Product(models.Model):
                                  null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    users_wishlist = models.ManyToManyField(UserProfile,
+    users_wishlist = models.ManyToManyField(User,
                                             related_name="user_wishlist",
                                             blank=True)
 
