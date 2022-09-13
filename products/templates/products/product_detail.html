@@ -26,7 +26,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-5">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name | upper }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
@@ -94,14 +94,14 @@
                             </div>
 
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-2">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
-                                <a href="{% url 'user_wishlist' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" role="button" aria-disabled="true">Add to Wish List</a>
+                                <a href="{% url 'user_wishlist' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-2" role="button" aria-disabled="true">Add to WishList</a>
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-2" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
