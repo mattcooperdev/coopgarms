@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Affordable streetwear fashion for everyone. Hoodies, jackets, t-shirts and more.">
+    <meta name="keywords" content="streetwear, fashion, urban fashion, affordable fashion, streetwear clothing, streetwear blog, fashion blog, urban wear">
     {% endblock %}
 
     {% block extra_meta %}
@@ -22,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ MEDIA_URL }}favicon.ico">
 
     {% endblock %}
 
@@ -46,7 +50,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Coopgarms {% block extra_title %}{% endblock %}</title>
+    <title>Coopgarms | Streetwear made affordable{% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
@@ -55,7 +59,7 @@
         <div id="topnav" class="row bg-black pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="{{ MEDIA_URL }}logo.png" class="logo my-0">
+                    <img src="{{ MEDIA_URL }}logo.png" class="logo my-0" alt="Coopgarms Logo">
                 </a>
             </div>
             <!--Search-->
