@@ -6,14 +6,14 @@ CoopGarms is a website built in Django using Python, JavaScript, CSS and HTML. T
 
 The site provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation, and Full CRUD functionality for Posts and User Profiles.
 
-![Logo](assets/screenshots/)
+![Logo](media/logo.png)
 
-[View the live website on Heroku](https://wavey-django.herokuapp.com/)
+[View the live website on Heroku](https://coopgarms.herokuapp.com/)
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
 ## Table of Contents
-* [User Experience Design (UX)](#UX)
+* [User Experience Design (UX)](#ux)
     * [The Strategy Plane](#the-strategy-plane)
         * [Site Goals](#site-goals)
         * [Epics](#epics)
@@ -23,13 +23,13 @@ Please note: To open any links in this document in a new browser tab, please pre
     * [The Skeleton Plane](#the-skeleton-plane)
         * [Wireframes](#wireframe-mockups)
         * [Database Schema](#database-schema)
-    * [The Surface Plane](#The-Surface-Plane)
+    * [The Surface Plane](#the-surface-plane)
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
 * [Deployment](#deployment)
-* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
 
 ## UX
 ### The Strategy Plane
@@ -43,8 +43,8 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 #### Site Goals
 * To provide users with a place to purchase goods sold by the business
-* To provide users with a stylish site to browse
-* To provide users with a place to become inspired and become part of a community
+* To provide users with an enjoyable browsing experience
+* To provide users with a place to become inspired and be part of a community
 
 ### Epics
 
@@ -67,7 +67,7 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ### User Stories
 
-From the Epics, 41 User stories were developed. Each story was assigned a classification of Must-Have, Should-Have, Could-Have or Won't Have. Inexperience with Django and time constraints during development left me completing 23 of the 24 User stories. I will however revisit the project at a later time for improvement. All of this information is avaialble on this [kanban board](https://github.com/mattcooperdev/coopgarms/projects/1).
+From the Epics, 41 User stories were developed. Each story was assigned a classification of Must-Have, Should-Have, Could-Have or Won't Have. Inexperience with Django and time constraints during development left me completing 24 of the 29 User stories. I will however revisit the project at a later time for improvement. All of this information is avaialble on this [kanban board](https://github.com/mattcooperdev/coopgarms/projects/1).
 
 #### As a first time user/potential customer -
 
@@ -75,23 +75,20 @@ From the Epics, 41 User stories were developed. Each story was assigned a classi
 - I can view products by category so that I can easily find what products I want [#30](https://github.com/mattcooperdev/coopgarms/issues/30)
 - I can create an account so that I don't have to re-enter my details every time I place an order [#19](https://github.com/mattcooperdev/coopgarms/issues/19)
 - I can add products to my Cart so that I can purchase them [#33](https://github.com/mattcooperdev/coopgarms/issues/33)
-- Sign up for the company newsletter.
 - Read the blog articles.
 
 #### As a return user/customer -
 
-- Login to my account.
-- View and adjust purchase information and maintain user information such as delivery address and payment info.
-- View my order history.
-- Write a review to any product purchased. 
-- Cancel/edit my profile.
-- Easily find any relevant order updates.
-- Sign up/cancel my subscription to the newsletter.
+- As a User I can login to my account so that I can enjoy the benefits of having an account[#23](https://github.com/mattcooperdev/coopgarms/issues/23)
+- As a User I can edit the details stored on my account so that I can keep my details up to date for deliveries/payment[#21](https://github.com/mattcooperdev/coopgarms/issues/21)
+- As a Shopper I want to be shown my order confirmation when my order has completed so that it is clear and obvious my order was created[#38](https://github.com/mattcooperdev/coopgarms/issues/38)
+- As a User I can delete my account so that I have control over where I want my data to be stored[#22](https://github.com/mattcooperdev/coopgarms/issues/22)
+- As a User I can check my account profile so that I can review the information held[#20](https://github.com/mattcooperdev/coopgarms/issues/20)
 
 #### As an admin user -
 
 - Log in to an admin account.
-- Add, remove or update any products.
+- As a Site Owner I can make changes to product details on the Site so that any corrections or misinformation can be amended[#26](https://github.com/mattcooperdev/coopgarms/issues/26)
 - Add posts to the site's info blog.
 
 	
@@ -118,6 +115,7 @@ Arising from user stories
 | ------ | :------: | :------: |
 | ** Provide users the ability to create an account ** | 5 | 5 |
 | ** Provide users the ability to make purchases ** | 5 | 5 |
+| ** Provide users the ability to search through products ** | 5 | 5 |
 | ** Provide users the ability to edit account details ** | 5 | 5 |
 | ** Provide users the ability to view order history ** | 5 | 5 |
 | ** Provide users the ability to edit their account ** | 5 | 5 |
@@ -125,20 +123,20 @@ Arising from user stories
 | ** Provide users the ability to access the site on any device ** | 5 | 5 |
 
 ### The Skeleton Plane
-#### Wireframe mock-ups
+#### Wireframe-mockups
 
 Wireframes were produced for each major page for desktop, mobile and tablet devices. As the site will be fully responsive, no matter the device size the user is viewing the site on, it will display accordingly.
 
 <details>
 <summary>Click for images</summary>
 
-![Home Page Wireframe](assets/wireframes/)
+![Home Page Wireframe](assets/wireframes/homepage.png)
 
+![Product Summary Wireframe](assets/wireframes/product-summary.png)
 
-![Post Detail Desktop Wireframe](assets/wireframes/)
+![Product Detail Wireframe](assets/wireframes/product-detail.png)
 
-
-![User Profile Desktop Wireframe](assets/wireframes/)
+![User Profile Wireframe](assets/wireframes/profile.png)
     
 </details>
 
@@ -157,7 +155,7 @@ Custom Profile, Post and Comment models were built on top of the default Django 
 
 #### Design
 
-Once happy with the initial layout of the site, I focussed on it's design, looking for something clean and concise that put focus on the learning material that would be provided. The logo was created in [Canva](https://canva.com) and this led me towards the colour palette I decided upon:
+Once happy with the initial layout of the site, I focussed on it's design, looking for something urban, yet clean that would be provide an experience. The logo was created in [Canva](https://canva.com) and this led me towards the colour palette I decided upon:
 
 <details>
 <summary>Expand</summary>
@@ -173,24 +171,27 @@ The palette was then ran through the contrast checker and only those combination
 
 ##### Typography 
 
-Google Fonts' Quicksand (Headers), Spline Sans Mono (body text) and sans serif (backup) were used for the fonts. 
+Google Fonts' Roboto Condensed (Heading and body text) and sans serif (backup) were used for the fonts. 
 
 ## Features
 
 #### Home page
 
 #### Navigation Bar
+
 The main navigation bar appears at the top of the page, clearly displaying the main navigational links users would require.
 
 ![Logged in User Nav Bar](assets/screenshots/header.png)
 
-A user menu is available to users who are logged into the site, users who are not logged in receive a login/register link in its place
+A user menu is available to users who are logged into the site, users who are not logged in receive a login/register link in its place. Admin would see additional options in the dropdown for blog and product management.
 
-![logged in user nave bar user menu open](assets/screenshots/navbar-login.png)
+![logged in user nav bar user menu open](assets/screenshots/navbar-login.png)
 
-The navigation bar and the user menu are fully responsive, adapting to narrower devices by appearing from the right hand side of the screen when the menu button is pressed.
+The navigation bar and the user menu are fully responsive, adapting to narrower devices by appearing from the left hand side of the screen when the menu button is pressed.
 
-![mobile user menu open](assets/screenshots/header-collapse.png)
+![mobile navbar](assets/screenshots/header-collapse.png)
+
+![mobile nav menu open](assets/screenshots/mobile-nav-menu.png)
 
 #### Footer
 A common footer is utilised through out the site to encourage users to visit the social media sites of the main site. They currently direct users to the generic social media sites, all external links open in a new tab.
@@ -200,35 +201,43 @@ A common footer is utilised through out the site to encourage users to visit the
 
 #### Product Card
 
-The post card on the home page gives the title, image and item amount, along with the rating. 
+The product card on the product page gives the title, image and item amount, along with the rating and tags. Clicking on the card will take you through to the product detail page. 
 
-![Standard Post Card](assets/screenshots/post-card.png)
+![Standard Product Card](assets/screenshots/product-card.png)
 
+#### Product Detail
+
+The detail view gives you an expanded view of the product with it's description along with the options to add to the wishlist, add to bag, or return to the product page. 
+
+![Product Detail](assets/screenshots/product-detail.png)
+
+#### Wishlist
+
+The wishlist view shows the User's saved items. This is only viewable to registered users logged-in to their account. A later implementation is to add the product directly to their cart.
+
+![Wishlist](assets/screenshots/wishlist.png)
+
+#### Cart
+
+The cart view shows the User their items that have been added, with the option to update their quantity of the item or remove it all together. They also have the option to continue shopping, or go to the checkout to complete their order. 
+
+![Cart](assets/screenshots/cart.png)
+
+#### Checkout
+
+This shows an order summary along with the Users address/billing details and card payment options (off image). Once the order is placed and payment confirmed, the User will be taken to the order summary page and receive an email of their order confirmation. 
 
 #### User Profile
 
-Users have access to their information by quickly visiting this page. Other registered users who don't own the visited profile page will have access to the page and their social links, but will not see the edit and delete profile buttons. If a User is not logged in, they will not be able to access the page; looking up via URL will redirect them to the login page. 
+Users have access to their information by quickly visiting this page. This will contain their delivery/billing information that they can easily update, along with their order history, which can be expanded by clicking the order number. If a User is not logged in, they will not be able to access the page; looking up via URL will redirect them to the login page. 
 
-![Owner Profile Page](assets/screenshots/profile-card.png)
+![Profile Page](assets/screenshots/profile.png)
 
-#### Edit Profile Page
-Users have the ability to edit their profiles on the site. The edit profile page is clearly laid out, and informs the user of the characters remaining for each field.
+#### Blog
 
-![Edit profile page](assets/screenshots/edit-profile.png)
+Anybody who visits the Site will be able to view the blog, posting about the latest streetwear news. If you are an admin, you will have the option on the page to create a new post, or edit and delete pots direct from the respective card. 
 
-#### Create/Edit Post Page
-Users have the ability to create and edit their posts. The create and edit post page is clearly laid out and with the inclusion of the TinyMCE widget, easily modified if necessary. 
-
-![Edit Post Form](assets/screenshots/update-post.png)
-
-##### Post Form
-![Create Post Form](assets/screenshots/create-post.png)
-
-#### Access to Edit Post and Delete Post Functionality
-Only the users that create the post can edit it or delete it. If the authorised user is the post author, then the edit and delete post buttons will appear in the masthead of that page.
-
-![Edit and Delete Post Masthead](assets/screenshots/post-detail-login.png)
-
+![Blog](assets/screenshots/blog.png)
 
 ## Future Enhancements
 
@@ -257,23 +266,30 @@ Other than this, I believe all other bugs to be out of this site; the major issu
 
 * Python
     * The following python modules were used on this project:
-      ```  * asgiref==3.5.1
-        * cloudinary==1.29.0
-        * dj-database-url==0.5.0
-        * dj3-cloudinary-storage==0.0.6
-        * Django==3.2.13
-        * django-allauth==0.50.0
-        * django-crispy-forms==1.14.0
-        * django-summernote==0.8.20.0
-        * django-tinymce==3.4.0
-        * gunicorn==20.1.0
-        * oauthlib==3.2.0
-        * psycopg2==2.9.3
-        * PyJWT==2.3.0
-        * python3-openid==3.2.0
-        * pytz==2022.1
-        * requests-oauthlib==1.3.1
-        * sqlparse==0.4.2 ```
+      ```  	asgiref==3.5.2
+		backports.zoneinfo;python_version<"3.9"
+		boto3==1.24.70
+		botocore==1.27.70
+		DateTime==4.6
+		dj-database-url==1.0.0
+		Django==4.1.1
+		django-allauth==0.51.0
+		django-countries==7.2.1
+		django-crispy-forms==1.14.0
+		django-storages==1.13.1
+		gunicorn==20.1.0
+		jmespath==1.0.1
+		oauthlib==3.2.0
+		Pillow==9.2.0
+		psycopg2-binary==2.9.3
+		PyJWT==2.4.0
+		python3-openid==3.2.0
+		pytz==2022.2.1
+		requests-oauthlib==1.3.1
+		s3transfer==0.6.0
+		sqlparse==0.4.2
+		stripe==4.1.0
+		zope.interface==5.4.0
 
 * Django
     * Django was used as the main python framework in the development of this project
@@ -284,7 +300,7 @@ Other than this, I believe all other bugs to be out of this site; the major issu
     * Heroku PostgreSQL was used as the database for this project during development and in production.
 * JavaScript
     * Custom JavaScript was used for the timeout of system messages presented.
-* Bootstrap 5.01
+* Bootstrap 4
     * Bootstrap was used for general layout and spacing requirements for the site.
 * Font Awesome
     * Was used for access to several icons for different sections where icons were appropriate.
@@ -296,19 +312,20 @@ Other than this, I believe all other bugs to be out of this site; the major issu
     * Jinja/Django templating language was utilised to insert data from the database into the sites pages. It was also utilised to perform queries on different datasets.
 * HTML
     * HTML was used as the base language for the templates created for the site.
-* Summernote
-    * Summernote was utilised in the inital stages of the site for use in the admin area. However, as Summernote only accepts images as its media capabilities, it was replaced for the front-end. 
 
 #### Packages Used
 * GitHub for writing the code 
 * Heroku for the deployment
 * Canva for the logo creation
-* Figma for the Wireframes
+* Balsamiq for the Wireframes
 * Lucid for the database schema
 
 #### Resources Used
 * Django Documentation was invaluable throughout the development process
 * Django AllAuth documentation
+* [Very Academy](https://www.youtube.com/watch?v=OgA0TTKAtqQ) tutorial on creating a Wishlist in Django
+* [Blvcks](https://blvcks.com/)for the product data
+* [Complex](https://complex.com) and [GQ](https://gq.com) for the blog articles
 
 ## Deployment
 
@@ -369,10 +386,10 @@ echo web: gunicorn tippy.wsgi:application > Procfile
 #### Forking the repository
 By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
 This can be done by
-    * Log into GitHub or create an account.
-    * Locate the repository at https://github.com/mattcooperdev/coopgarms.
-    * At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
-    * A copy of the repository should now be created in your own repository.
+    - Log into GitHub or create an account.
+    - Locate the repository at [Coopgrams](https://github.com/mattcooperdev/coopgarms)
+    - At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
+    - A copy of the repository should now be created in your own repository.
 
 #### Create a clone of this repository
 Creating a clone enables you to make a copy of the repository at that point in time - this lets you run a copy of the project locally:
