@@ -111,12 +111,12 @@
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             <a href="{% url 'add_blog' %}" class="dropdown-item">Blog Management</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'wishlist' %}" class="dropdown-item">My Wishlist</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item" aria-label="go to your profile">My Profile</a>
+                            <a href="{% url 'wishlist' %}" class="dropdown-item" aria-label="go to your wish list">My Wishlist</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="logout of your account">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="register your account">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="login to your account">Login</a>
                             {% endif %}
                         </div>
                     </li>
