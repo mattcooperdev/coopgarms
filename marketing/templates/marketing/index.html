@@ -1,0 +1,37 @@
+{% extends 'account/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block extra_title %}
+- Subscribe
+{% endblock %}
+  
+
+{% block content %}
+<!--Email subscription Form -->
+<div class="pic-overlay"></div>
+    <div class="container">
+        <div class="blog-container">
+            <h1 class="blog-head">Subscribe</h1>
+            <div class="row">
+                <div class="blog-card m-5 w-50">
+                    <div class="card-body">
+                        <form method="post" action="{% url 'subscription' %}">
+                            {% csrf_token %}
+                    
+                            <div class="form-group">
+                            <label>Subscribe</label> <br>
+                            <input class="form-control" type="email" name="email" placeholder="Enter Email to Subscribe">
+                            <button class="btn btn-info mt-2" type="submit">Submit</button>
+                            </div>
+                    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
