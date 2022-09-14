@@ -4,7 +4,7 @@
 ## Introduction
 CoopGarms is a website built in Django using Python, JavaScript, CSS and HTML. This is a full B2C ecommerce Site for a fictional business. The business sells fashionable streetwear such as trainers, hoodies and tshirts. Shoppers can select one or more products and checkout in a simple payment system. If users choose to register and created a profile, they have the ability to save their address and payment details, as well as create a wishlist of products they would like to purchase and create reviews on those they have. 
 
-The site provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation, and Full CRUD functionality for Posts and User Profiles.
+The site provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation, and Full CRUD functionality for Products, Blogs and User Profiles.
 
 ![Logo](media/logo.png)
 
@@ -34,7 +34,7 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ## UX
 ### The Strategy Plane
-*  Coopgarms is intended to be a B2C ecommerce Site that users can visit to purchase streetwear fashion. They will be able to search for specific items or look at a broader category, saving those items to a wishlist for future purchasing if required. The simplicity and cleanliness of the layout will allow them to easily browse and purchase items, whilst being able to track their order and review their history. Users will also be able to rate and review items to share their information with the greater community. 
+*  Coopgarms is intended to be a B2C ecommerce Site that users can visit to purchase streetwear fashion. They will be able to search for specific items or look at a broader category, saving those items to a wishlist for future purchasing if required. The simplicity and cleanliness of the layout will allow them to easily browse and purchase items, whilst being able to track their order and review their history. Users will also be able to read the latest news in the blog and leave reviews on products they have purchased. 
 
 #### The Sites Ideal User
 * Streetwear afficianado who liked to keep up with the latest trends.
@@ -94,7 +94,7 @@ From the Epics, 41 User stories were developed. Each story was assigned a classi
 
 ### SEO
 
-Keyword strategies were checked with the Google metrics to establish for the business. These were checked in the UK adn Europe, where the business would imagine it's main demographic to be. These were then refined accordingly and added to the meta data and throughout the Site (mainly in the Blog and the product descriptions) to enhance SEO performance. 
+Keyword strategies were checked with the Google metrics to establish best practice for the business. These were checked in the UK and Europe, where the business' main demographic would be targetted. These were then refined accordingly and added to both the meta data and throughout the Site (mainly in the Blog and the product descriptions) to enhance SEO performance. 
 
 Sitemap and Robots files were added to further improve SEO. 
 
@@ -131,8 +131,8 @@ Arising from user stories
 | ** Provide users the ability to create an account ** | 5 | 5 |
 | ** Provide users the ability to make purchases ** | 5 | 5 |
 | ** Provide users the ability to search through products ** | 5 | 5 |
-| ** Provide users the ability to edit account details ** | 5 | 5 |
 | ** Provide users the ability to view order history ** | 5 | 5 |
+| ** Provide users the ability to create an account ** | 5 | 5 |
 | ** Provide users the ability to edit their account ** | 5 | 5 |
 | ** Provide users the ability to delete their account ** | 5 | 5 |
 | ** Provide users the ability to access the site on any device ** | 5 | 5 |
@@ -158,7 +158,7 @@ Wireframes were produced for each major page for desktop, mobile and tablet devi
 
 #### Database Schema
 
-Custom Profile, Post and Comment models were built on top of the default Django User model, utilising Django's AllAuth to look after the user authentication. As AllAuth works with the generic User model, the Profile model was created to look after some custom fields that were not accounted for. I used [LucidChart](https://lucid.app/) to draw out the schema, listing all the relevant types to each requirement. As the schema was relatively simple, the use of foreign keys only became necessary with the author and post fields in the Post and Comment models respectively. 
+Custom models were created for the Profile, Products, Orders and Blog on top of the default Django User model, utilising Django's AllAuth to look after the user authentication. As AllAuth works with the generic User model, the Profile model was created to look after some custom fields that were not accounted for. I used [LucidChart](https://lucid.app/) to draw out the schema, listing all the relevant types to each requirement. As the schema was relatively simple, the use of foreign keys only became necessary with the category and user_profile fields in the Product and Order models respectively. 
 
 <details>
 <summary>Click to expand</summary>
@@ -229,7 +229,7 @@ The detail view gives you an expanded view of the product with it's description 
 
 #### Wishlist
 
-The wishlist view shows the User's saved items. This is only viewable to registered users logged-in to their account. A later implementation is to add the product directly to their cart.
+The wishlist view shows the User's saved items. This is only viewable to registered users logged-in to their account. A later implementation is to add the product directly to their cart from this card.
 
 ![Wishlist](assets/screenshots/wishlist.png)
 
@@ -312,8 +312,10 @@ Other than this, I believe all other bugs to be out of this site; the major issu
     * Django AllAuth was utilised to provide enhanced user account management functionality.
 * Heroku
     * Was used as the cloud based platform to deploy the site on
+*SQLite
+    * Django default SQL was used durign development
 * Heroku PostgreSQL
-    * Heroku PostgreSQL was used as the database for this project during development and in production.
+    * Heroku PostgreSQL was used as the database for this project during production.
 * JavaScript
     * Custom JavaScript was used for the timeout of system messages presented.
 * Bootstrap 4
@@ -339,9 +341,11 @@ Other than this, I believe all other bugs to be out of this site; the major issu
 #### Resources Used
 * Django Documentation was invaluable throughout the development process
 * Django AllAuth documentation
+* Code Institute's Boutique Ado project 
 * [Very Academy](https://www.youtube.com/watch?v=OgA0TTKAtqQ) tutorial on creating a Wishlist in Django
 * [Blvcks](https://blvcks.com/)for the product data
 * [Complex](https://complex.com) and [GQ](https://gq.com) for the blog articles
+* [Stack Overflow] for those panicky situations
 
 ## Deployment
 
