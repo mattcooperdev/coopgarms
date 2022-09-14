@@ -21,13 +21,11 @@
                     <div class="card-body">
                         <form method="post" action="{% url 'subscription' %}">
                             {% csrf_token %}
-                    
                             <div class="form-group">
                             <label>Subscribe</label> <br>
                             <input class="form-control" type="email" name="email" placeholder="Enter Email to Subscribe">
                             <button class="btn btn-info mt-2" type="submit">Submit</button>
                             </div>
-                    
                         </form>
                     </div>
                 </div>
