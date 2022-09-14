@@ -121,7 +121,8 @@ a.category-badge > span.badge:hover {
     width: 42px;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 12px;
+    margin-bottom: 5.25rem;
 }
 
 .btt-link,
