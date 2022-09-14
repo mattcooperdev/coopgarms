@@ -9,9 +9,9 @@
   * [JS:](#js)
   * [PEP8:](#pep8)
 * [Manual testing](#manual-testing)
-  * [As an **Admin** I can...](#as-an-admin-i-can)
-  * [As an **Unregistered User** I can...](#as-an-unregistered-user-i-can)
-  * [As a **Registered User** I can...](#as-a-registered-user-i-can)
+  * [As an Admin I can...](#as-an-admin-i-can)
+  * [As an Unregistered User I can...](#as-an-unregistered-user-i-can)
+  * [As a Registered User I can...](#as-a-registered-user-i-can)
 
 ## Bugs and Fixes During the Development Process
 
@@ -148,6 +148,11 @@ Below is a summary of how I manually tested each user story.
 | &check; | Notified of successful order |
 | &check; | Notified of unsuccessful order |
 
+| Checked | ...**subscribe to the newsletter** so that **I can receive news updates about the latest streetwear** |
+|:-------:|:--------|
+| &check; | Can access url |
+| &check; | Can input email address |
+| &check; | Recieve notification |
 
 
 
@@ -191,6 +196,7 @@ Below is a summary of how I manually tested each user story.
 | &check; | All pages can be accessed by their URL when logged in |
 | &check; | When logged out, only certain oages are available |
 | &check; | Message displayed if a user is logged out and tries to access a URL which is denied |
+| &check; | 404 page |
 
 | Checked | ...**see uniformity on each page and clearly distinguish the content subject** so that **I can quickly and familiarly navigate the page.** |
 |:-------:|:--------|

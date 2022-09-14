@@ -17,8 +17,7 @@ Please note: To open any links in this document in a new browser tab, please pre
     * [The Strategy Plane](#the-strategy-plane)
         * [Site Goals](#site-goals)
         * [Epics](#epics)
-        * [User Stories](#user-stories)
-        * [SEO](#seo)
+        * [SEO and Marketing](#seo-and-marketing)
     * [The Scope Plane](#the-scope-plane)
         * [Opportunities](#opportunities)
     * [The Skeleton Plane](#the-skeleton-plane)
@@ -92,11 +91,13 @@ From the Epics, 41 User stories were developed. Each story was assigned a classi
 - As a Site Owner I can make changes to product details on the Site so that any corrections or misinformation can be amended[#26](https://github.com/mattcooperdev/coopgarms/issues/26)
 - Add posts to the site's info blog.
 
-### SEO
+### SEO and Marketing
 
 Keyword strategies were checked with the Google metrics to establish best practice for the business. These were checked in the UK and Europe, where the business' main demographic would be targetted. These were then refined accordingly and added to both the meta data and throughout the Site (mainly in the Blog and the product descriptions) to enhance SEO performance. 
 
 Sitemap and Robots files were added to further improve SEO. 
+
+From a marketing perspective, a custom marketing app was created that contained a view connecting to the relevant Mailchimp account through their API. This is used to capture email addresses to keep them up to date with the latest collection news or anything else the business wishes to share. As the culture relies heavily on notifications about the latest releases and collaboration from brands, this is an excellent way to keep subscribers notified.
 
 Below is the facebook mockup that details the kind of posts would be created to target the businesses key demographic. Instagram would be utilised much greater in a marketing strategy due to it's visual appeal better aligning with the business goals, however a mockup was difficult to create.
 
@@ -120,6 +121,7 @@ Below is the facebook mockup that details the kind of posts would be created to 
 * Users can login to their account, change their password, email and delivery and (or) billing address
 * Users can reset their password if they forget it
 * Users can logout of their account
+* USers can subscribe to the newsletter
 * Responsive Design - the site needs to be fully responsive to cover a wide spectrum of screen sizes
 
 
@@ -210,7 +212,7 @@ The navigation bar and the user menu are fully responsive, adapting to narrower 
 ![mobile nav menu open](assets/screenshots/mobile-nav-menu.png)
 
 #### Footer
-A common footer is utilised through out the site to encourage users to visit the social media sites of the main site. They currently direct users to the generic social media sites, all external links open in a new tab.
+A common footer is utilised through out the site to encourage users to visit the social media sites of the main site, along with the option to subscribe to the newsletter. The social links currently direct users to the generic social media sites, all external links open in a new tab.
 
 ![footer](assets/screenshots/footer.png)
 
@@ -243,17 +245,44 @@ The cart view shows the User their items that have been added, with the option t
 
 This shows an order summary along with the Users address/billing details and card payment options (off image). Once the order is placed and payment confirmed, the User will be taken to the order summary page and receive an email of their order confirmation. 
 
+![Checkout](assets/screenshots/checkout.png)
+
 #### User Profile
 
 Users have access to their information by quickly visiting this page. This will contain their delivery/billing information that they can easily update, along with their order history, which can be expanded by clicking the order number. If a User is not logged in, they will not be able to access the page; looking up via URL will redirect them to the login page. 
 
+<details>
+<summary>Expand</summary>
+
 ![Profile Page](assets/screenshots/profile.png)
+
+</details>
+
 
 #### Blog
 
 Anybody who visits the Site will be able to view the blog, posting about the latest streetwear news. If you are an admin, you will have the option on the page to create a new post, or edit and delete pots direct from the respective card. 
 
+<details>
+<summary>Expand</summary>
+
 ![Blog](assets/screenshots/blog.png)
+
+</details>
+
+
+#### Newsletter Subscription
+
+Anybody who clicks the link in the footer, or visits the link through external marketing sources, will have the option to submit their email address to become subscribed to the Mailchimp mailouts. A message notification will be given to the User via a toast. 
+
+<details>
+<summary>Expand</summary>
+
+![Subscription](assets/screenshots/subscribe.png)
+
+</details>
+
+
 
 ## Future Enhancements
 
@@ -337,15 +366,16 @@ Other than this, I believe all other bugs to be out of this site; the major issu
 * Canva for the logo creation
 * Balsamiq for the Wireframes
 * Lucid for the database schema
+* Mailchimp for the newlsetter API
 
 #### Resources Used
 * Django Documentation was invaluable throughout the development process
 * Django AllAuth documentation
 * Code Institute's Boutique Ado project 
 * [Very Academy](https://www.youtube.com/watch?v=OgA0TTKAtqQ) tutorial on creating a Wishlist in Django
-* [Blvcks](https://blvcks.com/)for the product data
+* [Blvcks](https://blvcks.com/) for the product data
 * [Complex](https://complex.com) and [GQ](https://gq.com) for the blog articles
-* [Stack Overflow] for those panicky situations
+* [Stack Overflow](https://stackoverflow.com) for general bug queries
 
 ## Deployment
 
