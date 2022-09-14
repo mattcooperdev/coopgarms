@@ -145,15 +145,17 @@ Below is a summary of how I manually tested each user story.
 | &check; | Can make a purchase |
 | &check; | Can check validation on address and card details |
 | &check; | Can check order progress |
+| &check; | Notified of successful order |
+| &check; | Notified of unsuccessful order |
 
 
 
 
 ## As a **Registered User** I can... 
 
-| Checked | ...**create an account** so that **I can save my delivery and billing information** |
+| Checked | ...**update an account** so that **I can save my delivery and billing information** |
 |:-------:|:--------|
-| &check; | Can create an account  |
+| &check; | Have full CRUD of account  |
 | &check; | Can edit an account and it's information |
 | &check; | Can delete an account and all information held |
 | &check; | Check on profile information |
