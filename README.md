@@ -8,7 +8,7 @@ The site provides role based permissions for users to interact with a central da
 
 ![Logo](media/logo.png)
 
-[View the live website on Heroku](https://coopgarms.herokuapp.com/)
+[View the live website](https://coopgarms.onrender.com)
 
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
