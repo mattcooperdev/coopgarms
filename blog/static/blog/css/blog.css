@@ -1,18 +1,12 @@
-.blog-container {
-    position: absolute;
-    left: 2rem;
-    top: 15%;
-    min-height: 100vh;
-    width: 90vw;
-}
-
 .blog-head {
+    margin-top: 7rem;
     text-transform: uppercase;
     font-size: 6rem;
     color: #fff;
 }
 
 .blog-card {
+    left: 2rem;
     max-width: 90%;
     min-width: 75%;
     background-color: white;
@@ -23,6 +17,5 @@
     .blog-head {
         text-transform: uppercase;
         font-size: 3rem;
-        color: #fff;
     }
 }
