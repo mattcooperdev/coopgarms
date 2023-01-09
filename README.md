@@ -437,7 +437,7 @@ echo web: gunicorn tippy.wsgi:application > Procfile
 By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
 This can be done by
     - Log into GitHub or create an account.
-    - Locate the repository at [Coopgrams](https://github.com/mattcooperdev/coopgarms)
+    - Locate the repository at [Coopgarms](https://github.com/mattcooperdev/coopgarms)
     - At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
     - A copy of the repository should now be created in your own repository.
 
